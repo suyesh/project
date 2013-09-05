@@ -11,6 +11,9 @@
  *= require_self
  *= require_tree .
  */
-
+img.mrcat {
+	margin: 0 auto;
+	display: block;
+}
 
  @import "twitter/bootstrap";
