@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @seed.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @seed.description %>
+</p>
+
+<%= link_to 'Edit', edit_seed_path(@seed) %> |
+<%= link_to 'Back', seeds_path %>

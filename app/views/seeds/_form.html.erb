@@ -1,0 +1,23 @@
+<%= form_for(@seed) do |f| %>
+  <% if @seed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seed.errors.count, "error") %> prohibited this seed from being saved:</h2>
+
+      <ul>
+      <% @seed.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <%= f.label :title, :class=> "sr-only" %><br>
+    <%= f.text_field :title, :class=>"form-control", :placeholder => "I Think I know Why the Apple Fell from the Tree", :style => "height: 60px;" %> 
+  </div>
+  <div>
+    <%= f.submit :class => "btn btn-default" %>
+  </div>
+</div>
+</form>
+<% end %>
